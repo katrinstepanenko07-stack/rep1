@@ -43,13 +43,13 @@ int main() {
     double summa_d = 0;
     for (int i = 0; i<n-1; i++) {
         double tek_d = 0;
-        tek_d += pow((pow((arr_x[i+1] - arr_x[i]), 2) + pow((arr_y[i+1] - arr_y[i]), 2)), 0.5);
+        tek_d += pow((pow(abs(arr_x[i+1] - arr_x[i]), 2) + pow(abs(arr_y[i+1] - arr_y[i]), 2)), 0.5);
         std::cout << i+1 << " сторона) " << tek_d << std::endl;
         summa_d += tek_d;
     }
 
     double ost = 0;
-    ost = pow((pow((arr_x[0] - arr_x[n-1]), 2) + pow((arr_y[0] - arr_y[n-1]), 2)), 0.5);
+    ost = pow((pow(abs(arr_x[0] - arr_x[n-1]), 2) + pow(abs(arr_y[0] - arr_y[n-1]), 2)), 0.5);
     std::cout << n << " сторона) " << ost << std::endl;
     summa_d += ost;
 
