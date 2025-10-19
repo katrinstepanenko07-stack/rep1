@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cctype>
+#include <cstring>
 
 char caesar(char c, int shift) {
     if (std::isalpha(c)) {
@@ -9,7 +10,7 @@ char caesar(char c, int shift) {
         } else {
             base = 'a';
         }
-        return (char)(((c - base + shift) % 26) + base);
+        return (char)(((c - base + shift + 26) % 26) + base);
     } else {
         return c;
     }
