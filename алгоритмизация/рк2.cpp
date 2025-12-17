@@ -95,8 +95,8 @@ public:
 
 class Bird : public Animal {
 private:
-    double wingspan;      // in meters
-    double flightSpeed;   // average flight speed in km/h
+    double wingspan;    
+    double flightSpeed;  
 
 public:
     Bird(const std::string& name = "", const std::string& species = "", int age = 0,
